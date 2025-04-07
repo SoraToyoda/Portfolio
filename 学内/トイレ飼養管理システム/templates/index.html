@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>トイレ状況</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            text-align: center;
+        }
+        .toilet-status {
+            width: 300px;
+            height: 150px;
+            margin: 10px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .row {
+            display: flex;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>トイレ状況</h1>
+        <div class="row">
+            <div class="toilet-status" style="background-color: {{ color }};">
+                <p>トイレ1</p>
+                <p>状態: {{ status }}</p>
+                <p>トイレットペーパー: {{ toilet_paper }}</p>
+            </div>
+            <div class="toilet-status" style="background-color: {{ color }};">
+                <p>トイレ2</p>
+                <p>状態: {{ status }}</p>
+                <p>トイレットペーパー: {{ toilet_paper }}</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
